@@ -1,0 +1,89 @@
+/*
+https://github.com/elenapan/dotfiles/blob/master/config/rofi/config.rasi
+*/
+
+configuration {
+  modi: 		"windowcd,window,drun,run";
+  display-drun:     	"Applications ";
+  display-run:		"Executables ";
+  display-window:   	"Windows ❱";
+  display-windowcd: 	"Windows cd ";
+  display-ssh:     	"ssh ❱";
+  kb-clear-line:	"Control+Shift+BackSpace";
+  fullscreen:		true;
+  show-icons:		true;
+  terminal:		"kitty";
+  theme:		"colors.rasi";
+  window-format:	"{w:15} {n:20} {t:0}";
+}
+
+* {
+  font:			"Source Code Pro 20";
+  padding:		5px 10px;
+  background-color:	@xbg;
+  color:		@xfg;
+}
+
+mainbox {
+  border:		10;
+  padding:		6;
+}
+
+window {
+  location:		west;
+  border-radius:	5px;
+  height:		400px;
+  width:		1000px;
+  padding:		30px;
+}
+
+#prompt {
+  color:		@x0;
+}
+
+inputbar {
+  border-color:		@x1;
+  border:		3px 3px 3px 15px;
+  border-radius:	20px;
+}
+
+entry {
+  color:		@x0;
+  spacing:		0;
+}  
+
+listview {
+  cycle:		false;
+  padding:		40px 10px 0px 10px;
+  spacing:		0.5em;
+  columns:		1;
+  lines:		6;
+  //background-color:	#81a1c1;
+}
+
+#element selected {
+  text-color:		@x0;
+  background-color:	@x1;
+  border:		1px 1px 1px 10px;
+  border-radius:	10px;
+  border-color:		@x8;
+}
+
+button {
+  margin:		5px;
+  padding: 		5px;
+  background-color:	@xbg;
+  text-color:		@x8;
+}
+
+button selected {
+  background-color:	@xbg;
+  text-color:		@x0;
+  border:		3px 3px 3px 15px;
+  border-radius:	20px;
+  border-color:		@x0;
+}
+
+//@import "colors.rasi"
+
+/* vim:ft=css
