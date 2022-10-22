@@ -13,9 +13,9 @@ configuration {
   fullscreen:		true;
   show-icons:		true;
   terminal:		"kitty";
-  theme:		"colors.rasi";
   window-format:	"{w:15} {n:20} {t:0}";
 }
+@theme	"colors.rasi"
 
 * {
   font:			"Source Code Pro 20";
@@ -32,8 +32,10 @@ mainbox {
 window {
   location:		west;
   border-radius:	5px;
-  height:		400px;
-  width:		1000px;
+  /* height:		400px;
+  width:		1000px; */
+  width: 100%;
+  height: 100%;
   padding:		30px;
 }
 
